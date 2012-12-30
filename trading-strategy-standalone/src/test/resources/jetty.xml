@@ -45,15 +45,6 @@
         </Arg>
     </Call>
 
-    <!-- AJP13 Connector configuration -->
-    <!--<Call name="addConnector">
-        <Arg>
-            <New class="org.eclipse.jetty.ajp.Ajp13SocketConnector">
-                <Set name="port">8010</Set>
-            </New>
-        </Arg>
-    </Call>-->
-
     <!-- ======================================================= -->
     <!-- Configure a Context                                     -->
     <!-- ======================================================= -->
@@ -62,7 +53,6 @@
             <Arg>/trading</Arg>
         </Call>
         <Call name="setWar">
-            <!-- Careful not to reformat the following line - may break jetty -->
             <Arg><SystemProperty name="jetty.home" default="."/>
                 /trading-strategy-web/trading-strategy-web-war/src/main/webapp
             </Arg>
