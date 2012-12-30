@@ -53,9 +53,7 @@
             <Arg>/trading</Arg>
         </Call>
         <Call name="setWar">
-            <Arg><SystemProperty name="jetty.home" default="."/>
-                /trading-strategy-web/trading-strategy-web-war/src/main/webapp
-            </Arg>
+            <Arg><SystemProperty name="jetty.home" default="."/>/trading-strategy-web/trading-strategy-web-war/src/main/webapp</Arg>
         </Call>
         <Get name="SessionHandler">
             <Set name="SessionManager">
